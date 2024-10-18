@@ -1,18 +1,17 @@
 import React, {useState, useEffect} from "react"
-// import './App.css';
 import "./style.css";
 import NavBar from './components/Navbar';
 import Footer from "./components/Footer";
 import Home from './components/Home';
-import Resume from "./components/Resume/Resume";
-import Preloader from "./components/Preloader";
+import Resume from "./components/Documents/Resume";
+import Education from "./components/Education";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Navigate
 } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -39,7 +38,8 @@ function App() {
           <Route path="/about" element={<About />} />*/}
           <Route path="/resume" element={<Resume />} /> 
           <Route path="*" element={<Navigate to="/"/>} />
-      </Routes>
+      </Routes> 
+
       <Footer />
     </div>
   </Router>
