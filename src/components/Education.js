@@ -1,5 +1,5 @@
 import { Chrono } from "react-chrono";
-import { EDUCATION } from "../constants/data";
+import { EDUCATION } from "../data/data";
 
 const Education = () =>{
     return(

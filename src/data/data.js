@@ -1,7 +1,7 @@
 import logo from "../assets/logo.jpg";
 import { Chrono } from "react-chrono";
 
-export const TAG_LINE = `Software Developer | Programmer | Design Thinker | Artist | Poet | Writer`
+export const TAG_LINE = `Software Developer | Programmer | Design Thinker | Artist | Writer`
 
 export const INTRODUCTION = `A creative, data driven computer science graduate working as a Project Associate at CMTI  from  Bangalore, India.
 Fashion and Art fuels my mind when I'm off black screens with lines ending with semicolon.

@@ -3,6 +3,7 @@ export const content = ["./src/**/*.{js,jsx,ts,tsx}",]
 export const theme = {
   extend: {
     colors:{
+      'primaryColorDark': '#7db7c9',      // blue (slightly darker)
       
       'primaryColor': '#ADD8E6',      //blue
       'primaryHover': '#DAEEF5', 
@@ -10,9 +11,11 @@ export const theme = {
       'secondaryColor' :'#800020',      //red
       'secondaryHover' :'rgb(146, 10, 10)',
 
-      'paragraphText': 'rgb(77, 16, 31)',     
+      'paragraphText': '#3a4042',    // paragraph 
+      'smallContent': '#535c5e',
       'singleLineText' : '#2d4d77',        //dark blue
-      'headingText' : ' rgb(146, 10, 10)',      //red
+      'headingText' : ' rgb(146, 10, 10)',      //Heading red
+      
     }
   },
 }
