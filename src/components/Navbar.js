@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.jpg";
+import profile_picture from "../assets/profile_picture.png"
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import pdf from "../assets/resume/Resume_Ananya.pdf"
@@ -12,9 +13,6 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-// import worker from "frontend/node_modules/pdfjs-dist/build/pdf.worker.entry";
-
-
 pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
 
 
@@ -39,7 +37,7 @@ const NavBar = () => {
     >
       <div className="container mx-auto flex items-center justify-between p-4">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="brand" className="w-10 h-10 mr-2" />
+          <img src={profile_picture} alt="brand" className="w-10 h-10 mr-2" />
           <span className="text-primaryColorDark text-lg font-semibold">
             Ananya Kedlaya
           </span>
@@ -111,7 +109,7 @@ const NavBar = () => {
 
             <li className="mt-4 md:mt-0">
               <a
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/Anan23Ked/Portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center bg-primaryColor text-yellow-700 px-4 py-2 rounded hover:bg-primaryColorDark hover:text-yellow-200 transition-all duration-300"

@@ -32,13 +32,15 @@ const Home = () => {
             <div className="landing-info flex flex-row justify-between pt-8">
             <div className='flex flex-col'>
             
-              <motion.h1                
-                className=" text-headingText text-4xl"
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 100 }}
-                transition={{ duration: 0.5 }}> Hi, I am
-
-              </motion.h1> 
+          
+              <motion.div
+                            className="w-full sm:w-1/3 lg:w-1/4"
+                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, x: -50 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                        >
+                            <p className=" text-headingText text-4xl">Hi, I am</p>
+                        </motion.div>
 
               <motion.div 
                 className="w-full md:w-7/12"
@@ -91,9 +93,18 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }} // Delay and duration
             >
-              <div className="text-headingText content-center text-4xl pt-8 w-full md:w-4/12">
+              {/* <div className="text-headingText content-center text-4xl pt-8 w-full md:w-4/12">
                 <div><h2>About</h2></div>
-              </div>
+              </div> */}
+              <motion.div
+                            className="w-full sm:w-1/3 lg:w-1/4"
+                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, x: -50 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                        >
+                            <p className=" text-headingText text-4xl content-center pt-8 w-full md:w-4/12 ">About</p>
+                        </motion.div>
+
 
               <div className="w-full md:w-8/12">
                 <div
@@ -114,6 +125,15 @@ const Home = () => {
               <div className="w-full text-center text-headingText text-4xl">
                 <h2>Education</h2>
               </div>
+              <motion.div 
+              className="text-center w-full text-center text-headingText text-4xl"
+              initial={{ opacity: 0 }} // Animates from opacity 0 to 1
+              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >uuuuuu
+              <h2>Education</h2>
+            </motion.div>
               <div className="mt-10">
                 <Education />
               </div>
@@ -127,7 +147,7 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.8 }}
             >
-              <div className="w-full md:w-3/12 text-headingText text-4xl">
+              <div className="w-full text-headingText text-4xl">
                 <motion.h1
                                 className="my-20 text-center text-headingText text-4xl"
                                 whileInView={{ opacity: 1, x: 0 }}

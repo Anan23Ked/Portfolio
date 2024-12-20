@@ -23,7 +23,7 @@ export const ABOUT = `
 export const EXPERIENCES = [
     {
       year: "November 2023 - Present",
-      role: "Project Associate",
+      role: `<u>Project Associate</u>`,
       company: "Central Manufacturing Technology Institute (CMTI)",
       description:  
       `<ul>
@@ -34,7 +34,7 @@ export const EXPERIENCES = [
       <li>• Full Stack Web Application with FastAPI, Vue.js, PostgreSQL databse</li>
       <li>• Migrated databse from MongoDB to PostgreSQL</li>
       <li>• UX Research and Designed UI on Figma</li>
-    </ul>,`,
+    </ul>`,
     // , banking, and customer service. Built data anonymization APIs, processing 100,000+ records with 90% accuracy. Refactored codebase to FastAPI, reducing API response times by 67-90%. Integrated OpenAI, Claude, and LangChain APIs, reducing AI infrastructure by 50%.`,
       technologies: ["Python", "PyQt", "FastAPI", "Vue.js", "React.js", "OpenCV", "PostgreSQL", "MongoDB" ,"Figma", "Git"],
     }
