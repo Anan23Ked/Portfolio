@@ -1,181 +1,3 @@
-// import React from 'react'
-// import { Container, Row, Col } from "react-bootstrap";
-// import { Link } from "react-router-dom";
-// import imgdemo from "../assets/imgdemo.png";
-// import Nav from "react-bootstrap/Nav";
-// import { ABOUT, INTRODUCTION, TAG_LINE } from '../constants/data';
-// import Education from './Education';
-// import Experience from './Experience';
-
-
-// const Home = () => {
-
-//   const resumebtn = () => {
-//     console.log("clicked")
-//   }
-//   return (
-//     <div>
-//       <section>
-//         <Container fluid className="home-section" id="home">
-
-//           <Container className="home-content">
-//             <div md={5} style={{ paddingBottom: 20 }} className='tags text-center text-tag_text bold'>{TAG_LINE}</div>
-
-//             <Row className="justify-content-md-between">
-//               <Col md={7} className="home-header">
-//                 <div><h2>Hi, I'm</h2></div>
-//                 <div className='LandingPageInfo text-left text-textnotes'>{INTRODUCTION}</div>
-
-//                 <div md={5} style={{ paddingTop: 20 }}>
-//                   <Link to="/resume" className='btn btn-primary'>
-//                     <button>View Resume</button>
-//                   </Link>
-//                 </div>
-//               </Col>
-
-//               <Col md={5} className="d-flex flex-column align-items-end" style={{ paddingBottom: 20 }}>
-//                 <img
-//                   src={imgdemo}
-//                   alt="home pic"
-//                   className="img-fluid"
-//                   style={{ maxHeight: "450px", float: "right" }}  // Float right for additional alignment
-//                 />
-//                 <div className="text-end"><p>Little info about the art in place</p></div>
-//               </Col>
-//             </Row>
-
-//             <Row className="justify-content-md-between">
-//               <Col md={4} className="home-header">
-//                 <div><h2>About</h2></div>
-
-//               </Col>
-
-//               <Col md={8} className="d-flex flex-column align-items-end" >
-//                 <div dangerouslySetInnerHTML={{ __html: ABOUT }}
-//                   className='LandingPageInfo text-textnotes '
-//                   style={{ paddingTop: '20px', textAlign: 'left', alignItems: 'right' }} // 20px padding between "About" and the paragraph
-//                 >
-//                 </div>
-//               </Col>
-//             </Row>
-
-//             <div>
-//               <Col md={3} style={{ paddingTop: 20 }} className="home-header">
-//                 <div><h2>Education</h2></div>
-//               </Col>
-//               <div className='mt-10'><Education /></div>
-              
-//               </div>
-
-//               <div>
-//               <Col md={3} style={{ paddingTop: 20 }} className="home-header">
-//                 <div><h2>Work Experience</h2></div>
-//               </Col>
-//               <div className='mt-10'><Experience /></div>
-              
-//               </div>
-//           </Container>
-          
-//         </Container>
-
-//       </section>
-
-//     </div>
-//   );
-// };
-
-// export default Home;
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import imgdemo from '../assets/imgdemo.png';
-// import { ABOUT, INTRODUCTION, TAG_LINE } from '../constants/data';
-// import Education from './Education';
-// import Experience from './Experience';
-
-// const Home = () => {
-
-//   const resumebtn = () => {
-//     console.log("clicked");
-//   };
-
-//   return (
-//     <div>
-//       <section>
-//         <div className="w-full" id="home">
-
-//           <div className="max-w-screen-xl mx-auto p-8">
-//             <div className="text-center bg-gradient-to-r from-pink-300 via-purple-400 to-pink-500 bg-clip-text text-xl tracking-tight text-transparent">{TAG_LINE}</div>
-
-//             <div className="flex flex-wrap justify-between">
-//               <div className="w-full md:w-7/12">
-//                 <div>
-//                   <h2 className="text-secondaryColor">Hi, I'm</h2>
-//                 </div>
-//                 <div className="text-left text-paragraphText mt-4">{INTRODUCTION}</div>
-
-//                 <div className="mt-5">
-//                   <Link to="/resume">
-//                     <button className="bg-primaryColor text-secondaryColor px-4 py-2 rounded">
-//                       View Resume
-//                     </button>
-//                   </Link>
-//                 </div>
-//               </div>
-
-//               <div className="w-full md:w-5/12 flex flex-col items-end mb-5">
-//                 <img
-//                   src={imgdemo}
-//                   alt="home pic"
-//                   className="max-h-96 float-right"
-//                 />
-//                 <div className="text-end mt-4">
-//                   <p>Little info about the art in place</p>
-//                 </div>
-//               </div>
-//             </div>
-
-//             <div className="flex flex-wrap justify-between">
-//               <div className="w-full md:w-4/12">
-//                 <div><h2>About</h2></div>
-//               </div>
-
-//               <div className="w-full md:w-8/12">
-//                 <div
-//                   dangerouslySetInnerHTML={{ __html: ABOUT }}
-//                   className="text-textnotes mt-5 text-left"
-//                 />
-//               </div>
-//             </div>
-
-//             <div className="mt-10">
-//               <div className="w-full md:w-3/12">
-//                 <div><h2>Education</h2></div>
-//               </div>
-//               <div className="mt-10">
-//                 <Education />
-//               </div>
-//             </div>
-
-//             <div className="mt-10">
-//               <div className="w-full md:w-3/12">
-//                 <div><h2>Work Experience</h2></div>
-//               </div>
-//               <div className="mt-10">
-//                 <Experience />
-//               </div>
-//             </div>
-//           </div>
-          
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default Home;
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -183,13 +5,14 @@ import imgdemo from '../assets/imgdemo.png';
 import { ABOUT, INTRODUCTION, TAG_LINE } from '../data/data';
 import Education from './Education';
 import Experience from './Experience';
+import pdf from "../assets/resume/Resume_Ananya.pdf" 
+import { AiOutlineDownload } from "react-icons/ai";
+import { Document, Page, pdfjs } from "react-pdf";
+
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
 
 const Home = () => {
-
-  const resumebtn = () => {
-    console.log("clicked");
-  };
-
   return (
     <div>
       <section>
@@ -206,28 +29,30 @@ const Home = () => {
               {TAG_LINE}
             </motion.div>
 
-            <div className="flex flex-wrap justify-between pt-8">
+            <div className="landing-info flex flex-row justify-between pt-8">
+            <div className='flex flex-col'>
+            
               <motion.h1                
-                className="my-20 text-center text-headingText text-4xl"
+                className=" text-headingText text-4xl"
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 0.5 }}> Hi, I am
-                
 
               </motion.h1> 
 
               <motion.div 
                 className="w-full md:w-7/12"
-                initial={{ opacity: 0, x: -50 }} // Slide in from left
+                initial={{ opacity: 0, x: 100 }} // Slide in from left
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
+                whileInView={{ opacity: 1, x: 0 }}
               >
-                
-           
                 <div className="text-left text-paragraphText mt-4">{INTRODUCTION}</div>
-
+           
                 <div className="mt-5">
-                  <Link to="/resume">
+                  <a    href={pdf}
+                  target="_blank"
+                  rel="noopener noreferrer" >
                     <motion.button 
                       className="bg-primaryColor text-secondaryColor px-4 py-2 rounded shadow-md"
                       whileInView={{ opacity: 1, x: 0 }}
@@ -238,9 +63,10 @@ const Home = () => {
                     >
                       View Resume
                     </motion.button>
-                  </Link>
+                  </a>
+                  
                 </div>
-              </motion.div>
+              </motion.div></div>
 
               <motion.div 
                 className="w-full md:w-5/12 flex flex-col items-end mb-5"
@@ -258,14 +84,14 @@ const Home = () => {
                 </div>
               </motion.div>
             </div>
-
+            <div className='about justify-between flex flex-row'>
             <motion.div 
               className="flex flex-wrap justify-between"
               initial={{ opacity: 0 }} // Fade in
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }} // Delay and duration
             >
-              <div className="w-full md:w-4/12">
+              <div className="text-headingText content-center text-4xl pt-8 w-full md:w-4/12">
                 <div><h2>About</h2></div>
               </div>
 
@@ -276,36 +102,55 @@ const Home = () => {
                 />
               </div>
             </motion.div>
+            </div>
 
+            <div className='education content-center flex flex-col'>
             <motion.div 
               className="mt-10"
               initial={{ opacity: 0 }} // Fade in
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              <div className="w-full md:w-3/12">
-                <div><h2>Education</h2></div>
+              <div className="w-full text-center text-headingText text-4xl">
+                <h2>Education</h2>
               </div>
               <div className="mt-10">
                 <Education />
               </div>
             </motion.div>
+            </div>
 
+            <div className='work_experience content-center flex flex-row'>
             <motion.div 
               className="mt-10"
               initial={{ opacity: 0 }} // Fade in
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.8 }}
             >
-              <div className="w-full md:w-3/12">
-                <div><h2>Work Experience</h2></div>
+              <div className="w-full md:w-3/12 text-headingText text-4xl">
+                <motion.h1
+                                className="my-20 text-center text-headingText text-4xl"
+                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, x: 100 }}
+                                transition={{ duration: 0.5 }}
+                            >
+                                <motion.span 
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    initial={{ opacity: 0, x: 100 }}
+                                    transition={{ duration: 0.5 }}
+                                    
+                                >
+                                    Work Experience
+                                </motion.span>
+                            </motion.h1>
               </div>
               <div className="mt-10">
                 <Experience />
               </div>
             </motion.div>
+            </div>
           </motion.div>
-
+          
         </div>
       </section>
     </div>

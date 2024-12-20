@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/logo.jpg";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
+import pdf from "../assets/resume/Resume_Ananya.pdf"
 import {
   AiFillStar,
   AiOutlineHome,
@@ -9,6 +10,13 @@ import {
   AiFillPicture
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+// import worker from "frontend/node_modules/pdfjs-dist/build/pdf.worker.entry";
+
+
+pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
+
 
 const NavBar = () => {
   const [expand, updateExpanded] = useState(false);
@@ -26,9 +34,8 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${
-        navColour ? "bg-white shadow-md" : "bg-white"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${navColour ? "bg-white shadow-md" : "bg-white"
+        }`}
     >
       <div className="container mx-auto flex items-center justify-between p-4">
         <Link to="/" className="flex items-center">
@@ -47,9 +54,8 @@ const NavBar = () => {
               (classMod, index) => (
                 <span
                   key={index}
-                  className={`block absolute left-0 w-full h-0.5 bg-primaryColorDark transform transition-all duration-300 ${
-                    expand ? classMod : `top-${index * 2}`
-                  }`}
+                  className={`block absolute left-0 w-full h-0.5 bg-primaryColorDark transform transition-all duration-300 ${expand ? classMod : `top-${index * 2}`
+                    }`}
                 ></span>
               )
             )}
@@ -57,31 +63,26 @@ const NavBar = () => {
         </button>
 
         <div
-          className={`${
-            expand ? "block" : "hidden"
-          } md:block duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[90%] flex items-center w-full md:w-auto px-4`}
+          className={`${expand ? "block" : "hidden"
+            } md:block duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[90%] flex items-center w-full md:w-auto px-4`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-4 items-center mt-0 md:gap-[4vw] md:mt-0 space-y-6 md:space-y-0">
             {[{
-                to: "/",
-                label: "Home",
-                icon: <AiOutlineHome className="inline mr-1" />,
-              },
-              {
-                to: "/project",
-                label: "Projects",
-                icon: <AiOutlineFundProjectionScreen className="inline mr-1" />,
-              },
-              {
-                to: "/resume",
-                label: "Resume",
-                icon: <CgFileDocument className="inline mr-1" />,
-              },
-              {
-                to: "/gallery",
-                label: "Gallery",
-                icon: <AiFillPicture className="inline mr-1" />,
-              },
+              to: "/",
+              label: "Home",
+              icon: <AiOutlineHome className="inline mr-1" />,
+            },
+            {
+              to: "/project",
+              label: "Projects",
+              icon: <AiOutlineFundProjectionScreen className="inline mr-1" />,
+            },
+           
+            {
+              to: "/gallery",
+              label: "Gallery",
+              icon: <AiFillPicture className="inline mr-1" />,
+            },
             ].map((item, index) => (
               <li key={index}>
                 <Link
@@ -95,6 +96,18 @@ const NavBar = () => {
                 </Link>
               </li>
             ))}
+
+            <li className="mt-4 md:mt-0">
+              <a
+                href={pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative text-secondaryColor hover:text-secondaryHover transition-all duration-300 inline-block "
+              >
+              <CgFileDocument className="inline mr-1" /> Resume
+              <span className="absolute left-0 bottom-[-5px] w-0 h-1 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
 
             <li className="mt-4 md:mt-0">
               <a

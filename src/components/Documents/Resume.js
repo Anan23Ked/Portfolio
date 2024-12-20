@@ -10,18 +10,6 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = "frontend/public/pdf.worker.min.js";
 
-// import { version } from "pdfjs-dist";
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${version}/pdf.worker.min.js`;
-
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-
-// console.log(version)
-
-// import { GlobalWorkerOptions } from "pdfjs-dist/build/pdf";
-// import pdfWorker from "pdfjs-dist/build/pdf.worker.entry";
-// pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
-
 const Resume =() =>{
   const [width, setWidth] = useState(1200);
 

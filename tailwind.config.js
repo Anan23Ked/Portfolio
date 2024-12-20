@@ -15,6 +15,8 @@ export const theme = {
       'smallContent': '#535c5e',
       'singleLineText' : '#2d4d77',        //dark blue
       'headingText' : ' rgb(146, 10, 10)',      //Heading red
+
+      'highlightGreen' : 'rgb(69, 173, 66)',
       
     }
   },

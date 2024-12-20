@@ -24,7 +24,7 @@ export const EXPERIENCES = [
     {
       year: "November 2023 - Present",
       role: "Project Associate",
-      company: "CMTI",
+      company: "Central Manufacturing Technology Institute (CMTI)",
       description:  
       `<ul>
       <li>• Developed Remote Machine Health monitoring web application for Institution Machines</li>

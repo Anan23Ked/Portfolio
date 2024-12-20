@@ -4,21 +4,7 @@ import { motion } from "framer-motion";
 const Experience = () => {
     return (
         <div className="border-b border-neutral-900 pb-4">
-            <motion.h1
-                className="my-20 text-center text-4xl"
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 100 }}
-                transition={{ duration: 0.5 }}
-            >
-                <motion.span 
-                    whileInView={{ opacity: 1, x: 0 }}
-                    initial={{ opacity: 0, x: 100 }}
-                    transition={{ duration: 0.5 }}
-                    className="bg-gradient-to-r from-sky-300 via-red-400 to-sky-500 bg-clip-text text-4xl tracking-tight text-transparent"
-                >
-                    Experience
-                </motion.span>
-            </motion.h1>
+            
             <div>
                 {EXPERIENCES.map((experience, index) => (
                     <motion.div 
@@ -34,7 +20,7 @@ const Experience = () => {
                             initial={{ opacity: 0, x: -50 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
-                            <p className="mb-2 text-sm text-neutral-700">{experience.year}</p>
+                            <p className="mb-2 text-m text-singleLineText">{experience.year}</p>
                         </motion.div>
                         <motion.div 
                             className="w-full sm:w-2/3 lg:w-3/4"
@@ -42,13 +28,18 @@ const Experience = () => {
                             initial={{ opacity: 0, x: 50 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
-                            <h6 className="mb-2 font-semibold">
+                            <h6 className="mb-2 font-semibold text-highlightGreen">
                                 {experience.role} -{" "}
-                                <span className="text-sm text-purple-100">
+                                <span className="text-sm text-singleLineText ">
                                     {experience.company}
                                 </span>
                             </h6>
-                            <p className="mb-4 text-neutral-400">{experience.description}</p>
+                            <h6 className="mb-2">
+  <div
+    className="mb-4 text-paragraphText"
+    dangerouslySetInnerHTML={{ __html: experience.description }}
+  ></div>
+</h6>
                             <div className="flex flex-wrap">
                                 {experience.technologies.map((tech, techIndex) => (
                                     <motion.span 
