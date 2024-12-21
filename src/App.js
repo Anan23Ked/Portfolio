@@ -5,7 +5,6 @@ import Home from './components/Home';
 import Education from "./components/Education";
 import Experience from './components/Experience';
 import Projects from "./components/Projects";
-import { TAG_LINE, ABOUT, EDUCATION, EXPERIENCES, PROJECTS } from "./data/data";
 import {
   BrowserRouter as Router,
   Route,

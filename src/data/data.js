@@ -1,5 +1,4 @@
 import logo from "../assets/imgdemo.png";
-import { Chrono } from "react-chrono";
 
 export const TAG_LINE = `Software Developer | Programmer | Design Thinker | Artist | Writer`
 
@@ -35,7 +34,7 @@ export const EXPERIENCES = [
       <li>• Migrated databse from MongoDB to PostgreSQL</li>
       <li>• UX Research and Designed UI on Figma</li>
     </ul>`,
-    // , banking, and customer service. Built data anonymization APIs, processing 100,000+ records with 90% accuracy. Refactored codebase to FastAPI, reducing API response times by 67-90%. Integrated OpenAI, Claude, and LangChain APIs, reducing AI infrastructure by 50%.`,
+    
     technologies: ["Python", "PyQt", "FastAPI", "Vue.js", "React.js", "OpenCV", "PostgreSQL", "MongoDB", "Figma", "Git"],
   }
 ]
