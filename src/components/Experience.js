@@ -3,7 +3,30 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
     return (
-        <div className="border-b border-neutral-900 pb-4">
+        <div>
+        <motion.div 
+                      className="mt-10"
+                      initial={{ opacity: 0 }} // Fade in
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.9, duration: 0.8 }}
+                    >
+                      <div className="w-full text-headingText text-4xl">
+                        <motion.h1
+                                        className="my-20 text-center text-headingText text-4xl"
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        initial={{ opacity: 0, x: 100 }}
+                                        transition={{ duration: 0.5 }}
+                                    >
+                                        <motion.span 
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            initial={{ opacity: 0, x: 100 }}
+                                            transition={{ duration: 0.5 }}
+                                            
+                                        >
+                                            Work Experience
+                                        </motion.span>
+                                    </motion.h1>
+                                    </div>
 
             <div>
                 {EXPERIENCES.map((experience, index) => (
@@ -60,6 +83,7 @@ const Experience = () => {
                     </motion.div>
                 ))}
             </div>
+            </motion.div>
         </div>
     );
 };

@@ -7,9 +7,11 @@ export const theme = {
       
       'primaryColor': '#ADD8E6',      //blue
       'primaryHover': '#DAEEF5', 
+      'primaryShade': 'rgb(245, 249, 250)', 
       
       'secondaryColor' :'#800020',      //red
       'secondaryHover' :'rgb(146, 10, 10)',
+      'secondaryShade' : 'rgb(246, 238, 238)',
 
       'paragraphText': '#3a4042',    // paragraph 
       'smallContent': '#535c5e',

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.jpg";
 import profile_picture from "../assets/profile_picture.png"
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
