@@ -11,7 +11,6 @@ export const theme = {
       
       'secondaryColor' :'#800020',      //red
       'secondaryHover' :'rgb(146, 10, 10)',
-      'secondaryShade' : 'rgb(246, 238, 238)',
 
       'paragraphText': '#3a4042',    // paragraph 
       'smallContent': '#535c5e',

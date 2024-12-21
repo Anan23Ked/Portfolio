@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react"
 import { motion } from 'framer-motion'
 import NavBar from './components/Navbar';
 import Footer from "./components/Footer";
@@ -15,21 +14,10 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
 
   return (
     <Router>
-      {/* <Preloader load={load} /> */}
-
+   
       <div className="App">
         <NavBar />
 
