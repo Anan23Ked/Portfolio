@@ -11,7 +11,7 @@ export const ABOUT = `
     I'm a Project Associate at Central Manufacturing Technology Institute (CMTI),
     my work revolves around software product development for electronic equipments and machines. 
     <br>
-    <br>I conduct user research, design strategic product and develop desktop and web application with Python and Javascript Frameworks, like Vue.js and React.js.
+    <br>I conduct user research, design strategic product and develop applications for desktop and web. I also have experinece in ML, building YOLO model from scratch, preprocessing and annotation dataset.
     <br>
     <br>With a B.E degree in Computer Science and Engineering, I try to apply my Software Development skills to merge with my passion, art and creativity to innovate products that merge their boundries 
     <br>
@@ -27,15 +27,17 @@ export const EXPERIENCES = [
     description:
       `<ul>
       <li>• Developed Remote Machine Health monitoring web application for Institution Machines</li>
-      <li>• Ongoing research to detect defects during welding using thermal camera</li>
+      <li>• Build a YOLO model from scratch and used it to analyse thermal images to detech defects during welding</li>
       <li>• Thermal Image Processing</li>
+      <li>• Custom dataset creation and annotation using Roboflow</li>
       <li>• Python PyQt desktop Application development</li>
+      <li>• GUI development using Thermal Camera SDK</li>
       <li>• Full Stack Web Application with FastAPI, Vue.js, PostgreSQL databse</li>
       <li>• Migrated databse from MongoDB to PostgreSQL</li>
       <li>• UX Research and Designed UI on Figma</li>
     </ul>`,
     
-    technologies: ["Python", "PyQt", "FastAPI", "Vue.js", "React.js", "OpenCV", "PostgreSQL", "MongoDB", "Figma", "Git"],
+    technologies: ["Python", "PyQt", "FastAPI", "JavaScript", "Vue.js", "React.js", "PostgreSQL", "MongoDB", "OpenCV","Machine Learning", "YOLO", "CNN", "Figma", "Git", "Github", "Docker", "Roboflow"],
   }
 ]
 

@@ -70,7 +70,7 @@ const NavBar = () => {
               icon: <AiOutlineHome className="inline mr-1" />,
             },
             {
-              to: "/project",
+              to: "/projects",
               label: "Projects",
               icon: <AiOutlineFundProjectionScreen className="inline mr-1" />,
             },

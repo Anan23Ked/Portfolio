@@ -23,6 +23,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/projects" element={<Projects />} />
+        
         </Routes>
 
         <div>
