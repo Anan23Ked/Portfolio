@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
     return (
+        <section id = "experience">
         <div>
         <motion.div 
                       className="mt-10"
@@ -85,7 +86,7 @@ const Experience = () => {
             </div>
             </motion.div>
         </div>
-    );
+        </section>);
 };
 
 export default Experience;

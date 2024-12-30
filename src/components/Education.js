@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Education = () =>{
     return(
-      
+      <section id="education">
         <div className='education content-center flex flex-col'>
         <motion.div 
           className="mt-10"
@@ -45,7 +45,7 @@ const Education = () =>{
               </motion.div>
               </div>
         
-    )
+              </section>)
 }
 
 export default Education

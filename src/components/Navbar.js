@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import profile_picture from "../assets/profile_picture.png"
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { CgGitFork } from "react-icons/cg";
-import pdf from "../assets/resume/Resume_Ananya.pdf"
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiFillPicture
+  AiOutlineContacts,
+  AiOutlineCode
 } from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
@@ -35,9 +34,9 @@ const NavBar = () => {
         }`}
     >
       <div className="container mx-auto flex items-center justify-between p-4">
-        <Link to="/" className="flex items-center">
+        <Link to="#home" className="flex items-center">
           <img src={profile_picture} alt="brand" className="w-10 h-10 mr-2" />
-          <span className="text-primaryColorDark text-lg font-semibold">
+          <span className="text-secondaryColor text-lg font-semibold">
             Ananya Kedlaya
           </span>
         </Link>
@@ -65,21 +64,32 @@ const NavBar = () => {
         >
           <ul className="flex flex-col md:flex-row md:space-x-4 items-center mt-0 md:gap-[4vw] md:mt-0 space-y-6 md:space-y-0">
             {[{
-              to: "/",
+              to: "#home",
               label: "Home",
               icon: <AiOutlineHome className="inline mr-1" />,
             },
+             {
+              to: "#experience",
+              label: "Experience",
+              icon: <AiOutlineCode className="inline mr-1" />,
+            },
             {
-              to: "/projects",
+              to: "#projects",
               label: "Projects",
               icon: <AiOutlineFundProjectionScreen className="inline mr-1" />,
             },
-           
-            {
-              to: "/gallery",
-              label: "Gallery",
-              icon: <AiFillPicture className="inline mr-1" />,
+
+             {
+              to: "#contact",
+              label: "Contact Me",
+              icon: <AiOutlineContacts className="inline mr-1" />,
             },
+           
+            // {
+            //   to: "/gallery",
+            //   label: "Gallery",
+            //   icon: <AiFillPicture className="inline mr-1" />,
+            // },
             ].map((item, index) => (
               <li key={index}>
                 <Link
@@ -92,19 +102,10 @@ const NavBar = () => {
                   <span className="absolute left-0 bottom-[-5px] w-0 h-1 md:mt-2 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
+
+              
             ))}
 
-            <li className="mt-4 md:mt-0">
-              <a
-                href={pdf}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative text-secondaryColor hover:text-secondaryHover transition-all duration-300 inline-block "
-              >
-              <CgFileDocument className="inline mr-1" /> Resume
-              <span className="absolute left-0 bottom-[-5px] w-0 h-1 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </li>
 
             <li className="mt-4 md:mt-0">
               <a

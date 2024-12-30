@@ -1,4 +1,10 @@
-import logo from "../assets/imgdemo.png";
+import AIWeld from '../assets/images/AIweld.png'
+import ArtInsight from '../assets/images/ArtInsight.png'
+import Learnify from '../assets/images/Learnify.png'
+import Iridescence from '../assets/images/Iridescence.png'
+import LipToSpeech from '../assets/images/LipToSpeech.png'
+import MachineMonitoring from '../assets/images/MachineMonitoring.png'
+import Redesign from '../assets/images/Redesign.png'
 
 export const TAG_LINE = `Software Developer | Programmer | Design Thinker | Artist | Writer`
 
@@ -18,6 +24,8 @@ export const ABOUT = `
 
   </div>
 `
+
+export const ART_1 = "Acrylic on Paper - Art by me Selfishness, Suffering, Curiosity, Three qualities paving way for development guided by the Sun and balanced by the Moon in this vast universe of ours "
 
 export const EXPERIENCES = [
   {
@@ -44,7 +52,7 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "AI enabled Real Time Weld Defect Detection Application",
-    image: logo,
+    image: AIWeld,
     description:
       "Developing a YOLO basd ML model interface for Thermal Camera to idetify defects in MIG welding with thermal data and performded image processoing, dataset creation and annotation. Developed GUI with camera's SDK and Windows Desktop application with Python PyQT. Applied multuthreaded programming to seamlesly integrate Yolov11 model in backend",
     technologies: ["Python PyQt", "Yolo", "OpenCV", "Roboflow"],
@@ -52,16 +60,17 @@ export const PROJECTS = [
   },
   {
     title: "Machine Health Monitoring System",
-    image: logo,
+    image: MachineMonitoring,
     description:
     "Designed and Developed a Website for CMTI's smart machine manufacturing lab to moniter machine health parameters and slend when values are beyond the set threshold. Deployed it oin the local server of the unit. Benifitted machine operator's job to track the conditions of sensors and data acquired from the machines",
 
     technologies: ["Python FastAPI", "Vue.js", "PostgreSQL", "TailwindCSS"],
     link: ""
   },
+
   {
     title: "Iridescence.AI -Text to 3D Mesh model ",
-    image: logo,
+    image: Iridescence,
     description:
       `Parsed textual input into pre-trained stable diffusion model to generate 2D image which is used as input for Frequency Radiance Fields(FreeNerf) to generate 3D views which were then used to construct mesh model using marching cube algorithm
      
@@ -70,8 +79,16 @@ export const PROJECTS = [
     link: "https://github.com/Anan23Ked/Text_to_3DMesh_Model-FreeNeRF"
   },
   {
+    title: "LeARnify - an AR Education application",
+    image: Learnify,
+    description:
+      "An ongoing project on inducing inclusivity in education by creating accessible and creative content using Augmented Reality to enhance learning experince of high school studeents, and extend its use case to slow learners. This is oart of a nation-wide hackathon conducted by WAVES India.",
+    technologies: ["LensStudio", "JavaScript", "Figma"],
+    link: "https://docs.google.com/presentation/d/1-PUBe8EpsiqHnXeagwifZCPWqWG8Eg0chPe0KOSWzKw/edit?usp=sharing"
+  },
+  {
     title: "ArtInsight",
-    image: logo,
+    image: ArtInsight,
     description:
 
       `An ongoing Personal UI/UX Project that will be deveoloped into a workable application
@@ -90,7 +107,7 @@ The project focuses on minimizing the hassle of searching through various websit
   },
   {
     title: "Lip-to-Speech synthesis",
-    image: logo,
+    image: LipToSpeech,
     description:
       "Developed a text generation system from input speech video using Wav2Vec2 Transformers, Google Text-to-Speech library, enhancing readilibity for people with hearing disabilities.",
     technologies: ["Python", "Flask", "OpenCV"],
@@ -98,20 +115,13 @@ The project focuses on minimizing the hassle of searching through various websit
   },
   {
     title: "Web Page Redesign",
-    image: logo,
+    image: Redesign,
     description:
       "Redesigned the Webpage of a cybersecurity company on Figma and deployed on Wix with custom JavaScript functionalities",
     technologies: ["Figma", "JavaScript", "Wix"],
     link: "https://ananyakedlaya.wixsite.com/appsecurewix/contact-us"
   },
-  {
-    title: "LeARnify - an AR Education application",
-    image: logo,
-    description:
-      "An ongoing project on inducing inclusivity in education by creating accessible and creative content using Augmented Reality to enhance learning experince of high school studeents, and extend its use case to slow learners. This is oart of a nation-wide hackathon conducted by WAVES India.",
-    technologies: ["LensStudio", "JavaScript", "Figma"],
-    link: "https://docs.google.com/presentation/d/1-PUBe8EpsiqHnXeagwifZCPWqWG8Eg0chPe0KOSWzKw/edit?usp=sharing"
-  },
+
 
 ];
 
@@ -153,3 +163,9 @@ export const EDUCATION = [
       </ul>),
   }
 ]
+
+export const CONTACT = {
+  address: "Bangalore, India",
+  email: "kedlayaananya@gmail.com",
+
+};

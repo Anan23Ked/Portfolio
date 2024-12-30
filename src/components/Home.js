@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import imgdemo from '../assets/imgdemo.png';
-import { ABOUT, INTRODUCTION, TAG_LINE } from '../data/data';
+import display_art_img from '../assets/artworks/Art_1.jpg'
+import { ABOUT, INTRODUCTION, TAG_LINE, ART_1 } from '../data/data';
 import pdf from "../assets/resume/Resume_Ananya.pdf"
 import { pdfjs } from "react-pdf";
+import { CgFileDocument } from "react-icons/cg";
 
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
@@ -11,7 +12,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
 const Home = () => {
   return (
     <div>
-      <section>
+      <section id="home">
         <div className="w-full pt-[100px]" id="home">
 
           <motion.div className="max-w-screen-xl mx-auto p-8">
@@ -25,7 +26,7 @@ const Home = () => {
               {TAG_LINE}
             </motion.div>
 
-            <div className="landing-info flex flex-row justify-between pt-8">
+            <div className="landing-info  align-center flex flex-col md:flex-row justify-between pt-8">
               <div className='flex flex-col'>
 
 
@@ -45,44 +46,49 @@ const Home = () => {
                   transition={{ duration: 0.5 }}
                   whileInView={{ opacity: 1, x: 0 }}
                 >
-                  <div className="text-left text-paragraphText mt-4">{INTRODUCTION}</div>
+                  <div className='text-paragraphText' dangerouslySetInnerHTML={{ __html: ABOUT }}></div>
 
-                  <div className="mt-5">
+                  <div className="mt-5 mb-5">
+
+                    <motion.button
+                      className="bg-primaryColor  text-secondaryColor px-4 py-2 rounded shadow-md"
+                      whileInView={{ opacity: 1, x: 0 }}
+                      initial={{ opacity: 0, x: 50 }}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.9 }}
+                    >  
                     <a href={pdf}
                       target="_blank"
                       rel="noopener noreferrer" >
-                      <motion.button
-                        className="bg-primaryColor text-secondaryColor px-4 py-2 rounded shadow-md"
-                        whileInView={{ opacity: 1, x: 0 }}
-                        initial={{ opacity: 0, x: 50 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        whileHover={{ scale: 1.05 }} // Hover effect
-                        whileTap={{ scale: 0.9 }} // Click effect
-                      >
-                        View Resume
-                      </motion.button>
-                    </a>
+                      <div className='flex flex-cols gap-4 items-center'>
+                      <span><CgFileDocument /></span>
+                        <spam>View Resume</spam>
+                        </div>
+                      </a>
+                    </motion.button>
+
 
                   </div>
                 </motion.div></div>
 
               <motion.div
-                className="w-full md:w-5/12 flex flex-col items-end mb-5"
+                className="w-full bg-primaryColor p-2 md:w-5/12 flex flex-col mb-5"
                 initial={{ opacity: 0, x: 50 }} // Slide in from right
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
                 <img
-                  src={imgdemo}
+                  src={display_art_img}
                   alt="home pic"
                   className="max-h-96 float-right"
                 />
-                <div className="text-end text-smallContent mt-4">
-                  <p>Little info about the art in place</p>
+                <div className="text-center text-paragraphText mt-4">
+                  {ART_1}
                 </div>
               </motion.div>
             </div>
-            <div className='about justify-between flex flex-row'>
+            <div className='about p-8  rounded-lg bg-gradient-to-r from-secondaryColor via-singleLineText to-primaryColorDark border border-neutral-300 justify-between flex flex-row'>
               <motion.div
                 className="flex flex-wrap justify-between"
                 initial={{ opacity: 0 }} // Fade in
@@ -95,15 +101,12 @@ const Home = () => {
                   initial={{ opacity: 0, x: -50 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  <p className=" text-headingText text-4xl content-center pt-8 w-full md:w-4/12 ">About</p>
+                  <p className=" text-primaryShade text-4xl content-center pt-8 w-full md:w-4/12 ">About</p>
                 </motion.div>
 
 
                 <div className="w-full md:w-8/12">
-                  <div
-                    dangerouslySetInnerHTML={{ __html: ABOUT }}
-                    className="text-textnotes mt-5 text-left"
-                  />
+                  <div className="text-left text-primaryShade mt-4">{INTRODUCTION} </div>
                 </div>
               </motion.div>
             </div>
