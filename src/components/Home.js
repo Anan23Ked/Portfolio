@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div>
       <section id="home">
-        <div className="w-full pt-[100px]" id="home">
+        <div className="w-full pt-[50px]" id="home">
 
           <motion.div className="max-w-screen-xl mx-auto p-8">
 
@@ -50,7 +50,7 @@ const Home = () => {
                     <div>
                     <p className='text-paragraphText' dangerouslySetInnerHTML={{__html: about.content}}></p>
                     <div className='p-2'>{about.skills.map((tech, techIndex) =>(
-                      <span className="m-2 rounded bg-gradient-to-r from-secondaryColor/40 via-singleLineText/40 to-primaryColorDark/40 px-2 py-2 text-sm text-gray-700">{tech}</span>
+                      <span className="m-2 rounded bg-gradient-to-r from-secondaryColor/30 via-singleLineText/30 to-primaryColorDark/30 px-2 py-2 text-sm text-gray-700">{tech}</span>
                     ))}</div>
                     </div>
                   ))}</div>

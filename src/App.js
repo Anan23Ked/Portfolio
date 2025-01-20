@@ -19,7 +19,7 @@ function App() {
 
         <div>
           <section>
-            <div className="w-full" id="home">
+            <div className="w-full bg-gray-50 " id="home">
               <motion.div className="max-w-screen-xl mx-auto p-8">
                 <Home />
                 <Experience />
