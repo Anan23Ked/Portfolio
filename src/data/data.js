@@ -12,18 +12,21 @@ export const INTRODUCTION = `A creative, data driven computer science graduate w
 Fashion and Art fuels my mind when I'm off black screens with lines ending with semicolon.
 Or a poem or two when the pen and paper beckons me`
 
-export const ABOUT = `
+export const ABOUT = [{
+  content:
+`
   <div>
-    I'm a Project Associate at Central Manufacturing Technology Institute (CMTI),
+    A Project Associate at Central Manufacturing Technology Institute (CMTI),
     my work revolves around software product development for electronic equipments and machines. 
     <br>
-    <br>I conduct user research, design strategic product and develop applications for desktop and web. I also have experinece in ML, building YOLO model from scratch, preprocessing and annotation dataset.
+    <br>I conduct user research, design strategic product and develop applications for desktop and web. I also have experinece in ML, building and deploying YOLO model for real-time applications, preprocessing and annotation dataset. Practice MVP code architecture and multithreaded programming
     <br>
     <br>With a B.E degree in Computer Science and Engineering, I try to apply my Software Development skills to merge with my passion, art and creativity to innovate products that merge their boundries 
     <br>
 
   </div>
-`
+`,
+skills : ["JavaScript", "React.js", "Vue.js", "Python", "FastAPI", "PyQt", "ML"]}]
 
 export const ART_1 = "Acrylic on Paper - Art by me Selfishness, Suffering, Curiosity, Three qualities paving way for development guided by the Sun and balanced by the Moon in this vast universe of ours "
 
@@ -82,9 +85,9 @@ export const PROJECTS = [
     title: "LeARnify - an AR Education application",
     image: Learnify,
     description:
-      "An ongoing project on inducing inclusivity in education by creating accessible and creative content using Augmented Reality to enhance learning experince of high school studeents, and extend its use case to slow learners. This is oart of a nation-wide hackathon conducted by WAVES India.",
+      "An ongoing National Level Hackthon project on inducing inclusivity in education by creating accessible and creative content using Augmented Reality to enhance learning experince of high school students, and extend its use case to slow learners. User Flow demonstrated on Figma and AR implementation using LensStudio, created as a Snapchat filter",
     technologies: ["LensStudio", "JavaScript", "Figma"],
-    link: "https://docs.google.com/presentation/d/1-PUBe8EpsiqHnXeagwifZCPWqWG8Eg0chPe0KOSWzKw/edit?usp=sharing"
+    link: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e99399228d1f482c8f6476a4aee57982&metadata=01"
   },
   {
     title: "ArtInsight",

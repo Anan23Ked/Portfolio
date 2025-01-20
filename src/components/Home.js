@@ -46,7 +46,14 @@ const Home = () => {
                   transition={{ duration: 0.5 }}
                   whileInView={{ opacity: 1, x: 0 }}
                 >
-                  <div className='text-paragraphText' dangerouslySetInnerHTML={{ __html: ABOUT }}></div>
+                  <div>{ABOUT.map((about, index) =>(
+                    <div>
+                    <p className='text-paragraphText' dangerouslySetInnerHTML={{__html: about.content}}></p>
+                    <div className='p-2'>{about.skills.map((tech, techIndex) =>(
+                      <span className="m-2 rounded bg-gradient-to-r from-secondaryColor/40 via-singleLineText/40 to-primaryColorDark/40 px-2 py-2 text-sm text-gray-700">{tech}</span>
+                    ))}</div>
+                    </div>
+                  ))}</div>
 
                   <div className="mt-5 mb-5">
 
