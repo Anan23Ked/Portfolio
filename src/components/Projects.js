@@ -38,7 +38,7 @@ const Projects = () => {
                                     />
                                 </a>
                             </div>
-                            <div className="w-full max-w-xl lg:w-3/4">
+                            <div className="w-full max-w-xl md:text-left lg:w-3/4">
                                 <div className="justify-inbetween text-center content-center">
                                     <h6 className="mb-2 text-xl text-secondaryColor font-semibold  text-center lg:text-left">{project.title}</h6></div>
                                 <p className="mb-4 text-paragraphText text-center lg:text-left">{project.description}</p>

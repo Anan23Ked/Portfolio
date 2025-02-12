@@ -59,7 +59,7 @@ export const PROJECTS = [
     description:
       "Developing a YOLO basd ML model interface for Thermal Camera to idetify defects in MIG welding with thermal data and performded image processoing, dataset creation and annotation. Developed GUI with camera's SDK and Windows Desktop application with Python PyQT. Applied multuthreaded programming to seamlesly integrate Yolov11 model in backend",
     technologies: ["Python PyQt", "Yolo", "OpenCV", "Roboflow"],
-    link: ""
+    link: "https://drive.google.com/file/d/1I-YKu78JoI1-aBkw2hWohZ0XYqW43Qu2/view"
   },
   {
     title: "Machine Health Monitoring System",
