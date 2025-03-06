@@ -1,6 +1,7 @@
 import AIWeld from '../assets/images/AIweld.png'
 import ArtInsight from '../assets/images/ArtInsight.png'
 import Learnify from '../assets/images/Learnify.png'
+import LearnifyLogo from '../assets/images/LearnifyLogo.png'
 import Iridescence from '../assets/images/Iridescence.png'
 import LipToSpeech from '../assets/images/LipToSpeech.png'
 import MachineMonitoring from '../assets/images/MachineMonitoring.png'
@@ -54,10 +55,18 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "LeARnify - an AR Education application",
+    image: LearnifyLogo,
+    description:
+      "Developed a website to primarily run on smartphones using React.js and user authentoication and hosting with firebase as part of a National Level Hackthon project on inducing inclusivity in education by creating accessible and creative content using Augmented Reality to enhance learning experince of high school students, and extend its use case to slow learners. User Flow demonstrated on Figma and AR implementation using LensStudio, created as a Snapchat filter",
+    technologies: ["LensStudio", "JavaScript", "React.js", "Firebase", "TailwindCSS", "Vite", "Material UI", "Figma"],
+    link: "https://learnify-ce846.web.app/"
+  },
+  {
     title: "AI enabled Real Time Weld Defect Detection Application",
     image: AIWeld,
     description:
-      "Developing a YOLO basd ML model interface for Thermal Camera to idetify defects in MIG welding with thermal data and performded image processoing, dataset creation and annotation. Developed GUI with camera's SDK and Windows Desktop application with Python PyQT. Applied multuthreaded programming to seamlesly integrate Yolov11 model in backend",
+      "Building an .exe desktop app with YOLO basd ML model interface for a Thermal Camera to idetify defects in MIG welding with thermal data and performded image processing, dataset creation and annotation. Developed GUI with camera's SDK and Windows Desktop application with Python PyQT. Applied multuthreaded programming to seamlesly integrate Yolov11 model in backend",
     technologies: ["Python PyQt", "Yolo", "OpenCV", "Roboflow"],
     link: "https://drive.google.com/file/d/1I-YKu78JoI1-aBkw2hWohZ0XYqW43Qu2/view?usp=sharing"
   },
@@ -81,14 +90,7 @@ export const PROJECTS = [
     technologies: ["Python", "Machine Learning"],
     link: "https://github.com/Anan23Ked/Text_to_3DMesh_Model-FreeNeRF"
   },
-  {
-    title: "LeARnify - an AR Education application",
-    image: Learnify,
-    description:
-      "An ongoing National Level Hackthon project on inducing inclusivity in education by creating accessible and creative content using Augmented Reality to enhance learning experince of high school students, and extend its use case to slow learners. User Flow demonstrated on Figma and AR implementation using LensStudio, created as a Snapchat filter",
-    technologies: ["LensStudio", "JavaScript", "Figma"],
-    link: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e99399228d1f482c8f6476a4aee57982&metadata=01"
-  },
+  
   {
     title: "ArtInsight",
     image: ArtInsight,
