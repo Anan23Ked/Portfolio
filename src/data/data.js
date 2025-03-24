@@ -1,6 +1,5 @@
 import AIWeld from '../assets/images/AIweld.png'
 import ArtInsight from '../assets/images/ArtInsight.png'
-import Learnify from '../assets/images/Learnify.png'
 import LearnifyLogo from '../assets/images/LearnifyLogo.png'
 import Iridescence from '../assets/images/Iridescence.png'
 import LipToSpeech from '../assets/images/LipToSpeech.png'
@@ -38,8 +37,7 @@ export const EXPERIENCES = [
     company: "Central Manufacturing Technology Institute (CMTI)",
     description:
       `<ul>
-      <li>• Developed Remote Machine Health monitoring web application for Institution Machines</li>
-      <li>• Build a YOLO model from scratch and used it to analyse thermal images to detech defects during welding</li>
+      <li>• Dvelop SSD object detection Machne Learning(ML) model from scratch and used it to analyse thermal images to detect anomalies in real-time thermal camera feed</li>
       <li>• Thermal Image Processing</li>
       <li>• Custom dataset creation and annotation using Roboflow</li>
       <li>• Python PyQt desktop Application development</li>
