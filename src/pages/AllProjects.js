@@ -1,24 +1,21 @@
-import { HEROPROJECTS } from "../data/data.js";
+import { PROJECTS } from "../data/data.js";
 import { motion } from "framer-motion";
-import { HashLink as Link } from "react-router-hash-link";
 
-
-const Projects = () => {
-
+const AllProjects = () => {
   return (
-    <section id="projects" className="px-6">
+    <section id="all-projects" className="px-6">
       <motion.h1
         className="my-20 text-center text-4xl"
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 30 }}
         transition={{ duration: 0.5 }}
       >
-        <span className="text-headingText tracking-tight">Projects</span>
+        <span className="text-headingText text-4xl text-center mb-8">Projects</span>
       </motion.h1>
 
       {/* Grid */}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {HEROPROJECTS.map((project, index) => (
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 pb-16 mx-auto ">
+        {PROJECTS.map((project, index) => (
           <motion.div
             key={index}
             className="flex flex-col rounded-xl bg-primaryShade border border-neutral-300 p-6 hover:shadow-lg transition-shadow"
@@ -56,44 +53,17 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative text-secondaryColor hover:text-secondaryHover transition-colors group"
+                  className="text-primaryColor hover:underline"
                 >
                   View Project
-                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primaryColor transition-all duration-300 group-hover:w-full" />
                 </a>
               </div>
             )}
-
-            {/* Tech stack */}
-            <div className="mt-auto flex flex-wrap justify-center gap-2">
-              {project.technologies.map((tech, techIndex) => (
-                <motion.span
-                  key={techIndex}
-                  className="rounded bg-primaryColor px-2 py-1 text-xs text-neutral-800"
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  transition={{ duration: 0.2, delay: techIndex * 0.05 }}
-                >
-                  {tech}
-                </motion.span>
-              ))}
-            </div>
           </motion.div>
         ))}
       </div>
-
-      {/* Button */}
-     <div className="mt-10 text-center">
- 
-<Link to="/allprojects">
-  <button className="px-6 py-2 border rounded bg-primaryBtnCol text-primaryColorDark hover:bg-primaryColor hover:text-white transition-colors">
-    View All Projects
-  </button>
-</Link>
- 
-</div>
     </section>
   );
-};
+}
 
-export default Projects;
+export default AllProjects;

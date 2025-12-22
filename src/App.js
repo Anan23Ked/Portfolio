@@ -1,37 +1,45 @@
-import { motion } from 'framer-motion'
-import NavBar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from './components/Home';
-import Education from "./components/Education";
-import Experience from './components/Experience';
-import Projects from "./components/Projects";
-import Contact from './components/ContactMe';
-import {BrowserRouter as Router} from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import AllProjects from "./pages/AllProjects";
+import Gallery from "./pages/Gallery";
+import BlogList from "./pages/BlogList";
+import BlogPost from "./pages/BlogPost";
 
 function App() {
-
   return (
     <Router>
-   
       <div className="App overflow-hidden">
-
+        {/* Persistent */}
         <NavBar />
 
-        <div>
-          <section>
-            <div className="w-full bg-gray-50 " id="home">
-              <motion.div className="max-w-screen-xl mx-auto p-8">
-                <Home />
-                <Experience />
-                <Projects />
-                <Education />
-                <Contact />
-              </motion.div>
+        {/* Routed content */}
+        <Routes>
+         
+          <Route
+            path="/"
+            element={<LandingPage />}
+          />
 
+          {/* All projects page */}
+          <Route
+            path="/allprojects"
+            element={<AllProjects />}
+          />
 
-            </div>
-          </section>
-        </div>
+          {/* Gallery page */}
+          <Route
+            path="/gallery"
+            element={<Gallery />}
+          />
+
+  <Route path="/blog" element={<BlogList />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+        </Routes>
+
+        {/* Persistent */}
         <Footer />
       </div>
     </Router>

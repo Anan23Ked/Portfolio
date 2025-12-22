@@ -8,6 +8,8 @@ export const theme = {
       'primaryColor': '#ADD8E6',      //blue
       'primaryHover': '#DAEEF5', 
       'primaryShade': 'rgb(245, 249, 250)', 
+      'primaryBtnCol': '#0c1b20ff', 
+      'blogHeading': '#27505eff', 
       
       'secondaryColor' :'#800020',      //red
       'secondaryHover' :'rgb(146, 10, 10)',
