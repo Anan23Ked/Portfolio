@@ -36,7 +36,7 @@ const Home = () => {
                   initial={{ opacity: 0, x: -50 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  <p className=" text-headingText text-4xl">Hi, I am</p>
+                  <p className=" text-headingText text-4xl">Hi</p>
                 </motion.div>
 
                 <motion.div
@@ -49,9 +49,9 @@ const Home = () => {
                   <div>{ABOUT.map((about, index) =>(
                     <div>
                     <p className='text-paragraphText' dangerouslySetInnerHTML={{__html: about.content}}></p>
-                    <div className='p-2'>{about.skills.map((tech, techIndex) =>(
+                    {/* <div className='p-2'>{about.skills.map((tech, techIndex) =>(
                       <span className="m-2 rounded bg-gradient-to-r from-secondaryColor/30 via-singleLineText/30 to-primaryColorDark/30 px-2 py-2 text-sm text-gray-700">{tech}</span>
-                    ))}</div>
+                    ))}</div> */}
                     </div>
                   ))}</div>
 
@@ -95,7 +95,7 @@ const Home = () => {
                 </div>
               </motion.div>
             </div>
-            <div className='about p-8  rounded-lg bg-gradient-to-r from-secondaryColor via-singleLineText to-primaryColorDark border border-neutral-300 justify-between flex flex-row'>
+            {/* <div className='about p-8  rounded-lg bg-gradient-to-r from-secondaryColor via-singleLineText to-primaryColorDark border border-neutral-300 justify-between flex flex-row'>
               <motion.div
                 className="flex flex-wrap justify-between"
                 initial={{ opacity: 0 }} // Fade in
@@ -108,7 +108,7 @@ const Home = () => {
                   initial={{ opacity: 0, x: -50 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  <p className=" text-primaryShade text-4xl content-center pt-8 w-full md:w-4/12 ">About</p>
+                  <p className=" text-primaryShade text-4xl content-center pt-8 w-full md:w-4/12 ">BLOGS</p>
                 </motion.div>
 
 
@@ -116,7 +116,7 @@ const Home = () => {
                   <div className="text-left text-primaryShade mt-4">{INTRODUCTION} </div>
                 </div>
               </motion.div>
-            </div>
+            </div> */}
 
 
           </motion.div>

@@ -6,7 +6,7 @@ import LipToSpeech from '../assets/images/LipToSpeech.png'
 import MachineMonitoring from '../assets/images/MachineMonitoring.png'
 import Redesign from '../assets/images/Redesign.png'
 
-export const TAG_LINE = `Software Developer | Programmer | Design Thinker | Artist | Writer`
+export const TAG_LINE = `Software Developer | Programmer | Design Thinker | Artist`
 
 export const INTRODUCTION = `A creative, data driven computer science graduate working as a Project Associate at CMTI  from  Bangalore, India.
 Fashion and Art fuels my mind when I'm off black screens with lines ending with semicolon.
@@ -16,28 +16,27 @@ export const ABOUT = [{
   content:
 `
   <div>
-    A Project Associate at Central Manufacturing Technology Institute (CMTI),
-    my work revolves around software product development for electronic equipments and machines. 
+    I'm Ananya Kedlaya, a passionate Software Developer and an aspiring MSc Connected Environments student at University College London. 
+    <br> I combine software developmennt with hardware programming to enhance user experince of product usage.
     <br>
-    <br>I conduct user research, design strategic product and develop applications for desktop and web. I also have experinece in ML, building and deploying YOLO model for real-time applications, preprocessing and annotation dataset. Practice MVP code architecture and multithreaded programming
-    <br>
-    <br>With a B.E degree in Computer Science and Engineering, I try to apply my Software Development skills to merge with my passion, art and creativity to innovate products that merge their boundries 
+    <br>With industry experience in software development and my current learnings on hardware programming, I'm passionate about art and creativity to innovate products that merge technical boundries 
     <br>
 
   </div>
 `,
 skills : ["JavaScript", "React.js", "Vue.js", "Python", "FastAPI", "PyQt", "ML"]}]
 
-export const ART_1 = "Acrylic on Paper - Art by me Selfishness, Suffering, Curiosity, Three qualities paving way for development guided by the Sun and balanced by the Moon in this vast universe of ours "
+export const ART_1 = "Acrylic on Paper. Selfishness, Suffering, Curiosity, Three qualities paving way for development guided by the Sun and balanced by the Moon in this vast universe of ours "
 
 export const EXPERIENCES = [
   {
-    year: "November 2023 - Present",
+    year: "November 2023 - May 2025",
     role: `<u>Project Associate</u>`,
     company: "Central Manufacturing Technology Institute (CMTI)",
     description:
       `<ul>
-      <li>• Dvelop SSD object detection Machne Learning(ML) model from scratch and used it to analyse thermal images to detect anomalies in real-time thermal camera feed</li>
+      My work revolved around developing software product for electronic equipments and enhancing machine efficiency. 
+      <li>• Dvelop SSD object detection Machne Learning (ML) model to analyse thermal images in real-time MIG welding process</li>
       <li>• Thermal Image Processing</li>
       <li>• Custom dataset creation and annotation using Roboflow</li>
       <li>• Python PyQt desktop Application development</li>
@@ -49,6 +48,35 @@ export const EXPERIENCES = [
     
     technologies: ["Python", "PyQt", "FastAPI", "JavaScript", "Vue.js", "React.js", "PostgreSQL", "MongoDB", "OpenCV","Machine Learning", "YOLO", "CNN", "Figma", "Git", "Github", "Docker", "Roboflow"],
   }
+]
+
+
+export const HEROPROJECTS = [
+  {
+    title: "LeARnify - an AR Education application",
+    image: LearnifyLogo,
+    description:
+      "Developed a website to primarily run on smartphones using React.js and user authentoication and hosting with firebase as part of a National Level Hackthon project on inducing inclusivity in education by creating accessible and creative content using Augmented Reality to enhance learning experince of high school students, and extend its use case to slow learners. User Flow demonstrated on Figma and AR implementation using LensStudio, created as a Snapchat filter",
+    technologies: ["LensStudio", "JavaScript", "React.js", "Firebase", "TailwindCSS", "Vite", "Material UI", "Figma"],
+    link: "https://learnify-ce846.web.app/"
+  },
+  {
+    title: "AI enabled Real Time Weld Defect Detection Application",
+    image: AIWeld,
+    description:
+      "Building an .exe desktop app with YOLO basd ML model interface for a Thermal Camera to idetify defects in MIG welding with thermal data and performded image processing, dataset creation and annotation. Developed GUI with camera's SDK and Windows Desktop application with Python PyQT. Applied multuthreaded programming to seamlesly integrate Yolov11 model in backend",
+    technologies: ["Python PyQt", "Yolo", "OpenCV", "Roboflow"],
+    link: "https://drive.google.com/file/d/1I-YKu78JoI1-aBkw2hWohZ0XYqW43Qu2/view?usp=sharing"
+  },
+  {
+    title: "Machine Health Monitoring System",
+    image: MachineMonitoring,
+    description:
+    "Designed and Developed a Website for CMTI's smart machine manufacturing lab to moniter machine health parameters and slend when values are beyond the set threshold. Deployed it oin the local server of the unit. Benifitted machine operator's job to track the conditions of sensors and data acquired from the machines",
+
+    technologies: ["Python FastAPI", "Vue.js", "PostgreSQL", "TailwindCSS"],
+    link: ""
+  },
 ]
 
 export const PROJECTS = [
@@ -129,10 +157,21 @@ The project focuses on minimizing the hassle of searching through various websit
 ];
 
 export const EDUCATION = [
+    {
+    title: "Sep 2025 - Expected Sep 2026",
+    cardTitle: "MSc Connected Environments",
+    cardSubtitle: "University College London",
+    cardDetailedText: (
+      <ul style={{ color: 'rgb(77, 16, 31)' }}>
+        <li>• Internet of Things</li>
+        <li>• 3D printing, AR development</li>
+        <li>• Hardware programming</li>
+      </ul>),
+  },
   {
     title: "Aug 2019 - May 2023",
     cardTitle: "B.E Computer Science and Engineering",
-    cardSubtitle: "Acharya Institute of Technology | CGPA: 7.82",
+    cardSubtitle: "Acharya Institute of Technology | GPA: 3.3",
     cardDetailedText: (
       <ul style={{ color: 'rgb(77, 16, 31)' }}>
         <li>• Studied Web development and AI/ML concepts</li>
@@ -168,7 +207,7 @@ export const EDUCATION = [
 ]
 
 export const CONTACT = {
-  address: "Bangalore, India",
+  address: "London, United Kingdom",
   email: "kedlayaananya@gmail.com",
 
 };

@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import profile_picture from "../assets/profile_picture.png"
-import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import {
   AiFillStar,
-  AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineContacts,
-  AiOutlineCode
 } from "react-icons/ai";
+import { GrGallery } from "react-icons/gr";
+import { TfiWrite } from "react-icons/tfi";
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
@@ -28,13 +27,32 @@ const NavBar = () => {
 
   window.addEventListener("scroll", scrollHandler);
 
+  const navItems = [
+    {
+      to: "/allprojects",
+      label: "Projects",
+      icon: <AiOutlineFundProjectionScreen className="inline mr-1" />,
+    },
+
+    {
+      to: "/blog",
+      label: "Blog",
+      icon: <TfiWrite className="inline mr-1" />,
+    },    
+    {
+      to: "/gallery",
+      label: "Gallery",
+      icon: <GrGallery className="inline mr-1" />,
+    },
+  ];
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${navColour ? "bg-white shadow-md" : "bg-white"
         }`}
     >
       <div className="container mx-auto flex items-center justify-between p-4">
-        <Link to="#home" className="flex items-center">
+        <Link to="/#home" className="flex items-center">
           <img src={profile_picture} alt="brand" className="w-10 h-10 mr-2" />
           <span className="text-secondaryColor text-lg font-semibold">
             Ananya Kedlaya
@@ -63,34 +81,7 @@ const NavBar = () => {
             } md:block duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[90%] flex items-center w-full md:w-auto px-4`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-4 items-center mt-0 md:gap-[4vw] md:mt-0 space-y-6 md:space-y-0">
-            {[{
-              to: "#home",
-              label: "Home",
-              icon: <AiOutlineHome className="inline mr-1" />,
-            },
-             {
-              to: "#experience",
-              label: "Experience",
-              icon: <AiOutlineCode className="inline mr-1" />,
-            },
-            {
-              to: "#projects",
-              label: "Projects",
-              icon: <AiOutlineFundProjectionScreen className="inline mr-1" />,
-            },
-
-             {
-              to: "#contact",
-              label: "Contact Me",
-              icon: <AiOutlineContacts className="inline mr-1" />,
-            },
-           
-            // {
-            //   to: "/gallery",
-            //   label: "Gallery",
-            //   icon: <AiFillPicture className="inline mr-1" />,
-            // },
-            ].map((item, index) => (
+            {navItems.map((item, index) => (
               <li key={index}>
                 <Link
                   to={item.to}
@@ -102,8 +93,6 @@ const NavBar = () => {
                   <span className="absolute left-0 bottom-[-5px] w-0 h-1 md:mt-2 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
-
-              
             ))}
 
 

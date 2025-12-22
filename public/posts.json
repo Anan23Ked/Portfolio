@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "hello",
+    "title": "Hello World",
+    "date": "2025-01-01",
+    "excerpt": "This is my first blog post",
+    "coverImage": "/img/image.png"
+  },
+  {
+    "slug": "second",
+    "title": "Second world",
+    "date": "2025-01-01",
+    "excerpt": "This is my second blog post",
+    "coverImage": "/img/image.png"
+  }
+]
