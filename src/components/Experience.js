@@ -61,12 +61,12 @@ const Experience = () => {
                                     {experience.company}
                                 </span>
                             </h6>
-                            <h6 className="mb-2">
+                            {/* <h6 className="mb-2"> */}
                                 <div
                                     className="mb-4 text-paragraphText"
                                     dangerouslySetInnerHTML={{ __html: experience.description }}
                                 ></div>
-                            </h6>
+                            {/* </h6> */}
                             <div className="flex flex-wrap">
                                 {experience.technologies.map((tech, techIndex) => (
                                     <motion.span

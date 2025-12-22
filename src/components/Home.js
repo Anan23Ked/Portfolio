@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div>
       <section id="home">
-        <div className="w-full pt-[50px]" id="home">
+        <div className="w-full pt-[50px]" id="home-intro">
 
           <motion.div className="max-w-screen-xl mx-auto p-8">
 
@@ -47,8 +47,8 @@ const Home = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                 >
                   <div>{ABOUT.map((about, index) =>(
-                    <div>
-                    <p className='text-paragraphText' dangerouslySetInnerHTML={{__html: about.content}}></p>
+                    <div key={index}>
+                    <div className='text-paragraphText' dangerouslySetInnerHTML={{__html: about.content}}></div>
                     <div className="pt-4 flex flex-wrap gap-2 justify-center md:justify-start">{about.skills.map((tech, techIndex) =>(
                       <span key={techIndex} className="rounded bg-blogHeading/30 px-3 py-1 text-sm text-gray-700 whitespace-nowrap">{tech}</span>
                     ))}</div>
@@ -70,7 +70,7 @@ const Home = () => {
                       rel="noopener noreferrer" >
                       <div className='flex flex-cols gap-4 items-center'>
                       <span><CgFileDocument /></span>
-                        <spam>View Resume</spam>
+                        <span>View Resume</span>
                         </div>
                       </a>
                     </motion.button>
