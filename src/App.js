@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import NavBar from "./components/Navbar";
-import Footer from "./components/Footer";
-import LandingPage from "./pages/LandingPage";
-import AllProjects from "./pages/AllProjects";
-import Gallery from "./pages/Gallery";
-import BlogList from "./pages/BlogList";
-import BlogPost from "./pages/BlogPost";
+import NavBar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
+import LandingPage from "./pages/LandingPage.js";
+import AllProjects from "./pages/AllProjects.js";
+import Gallery from "./pages/Gallery.js";
+import BlogList from "./pages/BlogList.js";
+import BlogPost from "./pages/BlogPost.js";
 
 function App() {
   return (

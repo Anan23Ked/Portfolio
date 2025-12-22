@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import profile_picture from "../assets/profile_picture.png"
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -11,6 +11,7 @@ import { TfiWrite } from "react-icons/tfi";
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
+// pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/pdf.worker.min.js`;
 
 
 const NavBar = () => {
@@ -25,7 +26,10 @@ const NavBar = () => {
     }
   }
 
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   const navItems = [
     {
@@ -38,7 +42,7 @@ const NavBar = () => {
       to: "/blog",
       label: "Blog",
       icon: <TfiWrite className="inline mr-1" />,
-    },    
+    },
     {
       to: "/gallery",
       label: "Gallery",

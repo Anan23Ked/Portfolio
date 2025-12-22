@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getPostBySlug } from "../utils/posts";
+import { getPostBySlug } from "../utils/posts.js";
 import { marked } from "marked";
 
 export default function BlogPost() {

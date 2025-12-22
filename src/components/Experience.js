@@ -1,4 +1,4 @@
-import { EXPERIENCES } from "../data/data";
+import { EXPERIENCES } from "../data/data.js";
 import { motion } from "framer-motion";
 
 const Experience = () => {
@@ -6,7 +6,7 @@ const Experience = () => {
         <section id = "experience">
         <div>
         <motion.div 
-                      className="mt-10"
+                      
                       initial={{ opacity: 0 }} // Fade in
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.9, duration: 0.8 }}

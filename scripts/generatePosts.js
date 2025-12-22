@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
+import fm from "front-matter";
 
 const contentDir = path.join(process.cwd(), "content/blog");
 const contentImgDir = path.join(process.cwd(), "content/img");
@@ -21,7 +21,7 @@ const files = fs.readdirSync(contentDir);
 const posts = files.map((file) => {
   const filePath = path.join(contentDir, file);
   const fileContents = fs.readFileSync(filePath, "utf8");
-  const { data } = matter(fileContents);
+  const { attributes } = fm(fileContents);
 
   // copy markdown to public/blog
   fs.copyFileSync(
@@ -30,19 +30,19 @@ const posts = files.map((file) => {
   );
 
   // Ensure coverImage path is correct
-  if (data.coverImage && data.coverImage.startsWith("content/img/")) {
-    const imgName = path.basename(data.coverImage);
+  if (attributes.coverImage && attributes.coverImage.startsWith("content/img/")) {
+    const imgName = path.basename(attributes.coverImage);
     const srcImgPath = path.join(contentImgDir, imgName);
     const destImgPath = path.join(publicImgDir, imgName);
     if (fs.existsSync(srcImgPath)) {
       fs.copyFileSync(srcImgPath, destImgPath);
     }
-    data.coverImage = `/img/${imgName}`;
+    attributes.coverImage = `/img/${imgName}`;
   }
 
   return {
     slug: file.replace(".md", ""),
-    ...data,
+    ...attributes,
   };
 });
 

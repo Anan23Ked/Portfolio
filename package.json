@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-   "type": "module",
+  "type": "module",
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -11,6 +11,7 @@
     "axios": "^1.7.7",
     "buffer": "^6.0.3",
     "framer-motion": "^11.11.9",
+    "front-matter": "^4.0.2",
     "image-thumbnail": "^1.0.17",
     "marked": "^17.0.1",
     "pdfjs-dist": "^3.11.174",
