@@ -1,4 +1,4 @@
-import { EXPERIENCES } from "../data/data";
+import { EXPERIENCES } from "../data/data.js";
 import { motion } from "framer-motion";
 
 const Experience = () => {
@@ -6,7 +6,7 @@ const Experience = () => {
         <section id = "experience">
         <div>
         <motion.div 
-                      className="mt-10"
+                      
                       initial={{ opacity: 0 }} // Fade in
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.9, duration: 0.8 }}
@@ -61,12 +61,12 @@ const Experience = () => {
                                     {experience.company}
                                 </span>
                             </h6>
-                            <h6 className="mb-2">
+                            {/* <h6 className="mb-2"> */}
                                 <div
                                     className="mb-4 text-paragraphText"
                                     dangerouslySetInnerHTML={{ __html: experience.description }}
                                 ></div>
-                            </h6>
+                            {/* </h6> */}
                             <div className="flex flex-wrap">
                                 {experience.technologies.map((tech, techIndex) => (
                                     <motion.span

@@ -1,5 +1,5 @@
 import { Chrono } from "react-chrono";
-import { EDUCATION } from "../data/data";
+import { EDUCATION } from "../data/data.js";
 import { motion } from "framer-motion";
 
 const Education = () =>{

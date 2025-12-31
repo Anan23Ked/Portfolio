@@ -1,4 +1,4 @@
-import matter from "gray-matter";
+import fm from "front-matter";
 
 export async function getAllPosts() {
   const res = await fetch("/posts.json");
@@ -9,12 +9,12 @@ export async function getPostBySlug(slug) {
   const res = await fetch(`/blog/${slug}.md`);
   const text = await res.text();
 
-  const { content, data } = matter(text);
+  const { attributes, body } = fm(text);
 
   // Fix coverImage path
-  if (data.coverImage && data.coverImage.startsWith("content/img/")) {
-    data.coverImage = "/img/" + data.coverImage.split("/").pop();
+  if (attributes.coverImage && attributes.coverImage.startsWith("content/img/")) {
+    attributes.coverImage = "/img/" + attributes.coverImage.split("/").pop();
   }
 
-  return { content, ...data };
+  return { content: body, ...attributes };
 }

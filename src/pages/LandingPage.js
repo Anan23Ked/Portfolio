@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import Home from "../components/Home"
-import Education from "../components/Education";
-import Experience from "../components/Experience";
-import Projects from "../components/Projects";
-import Contact from "../components/ContactMe";
+import Home from "../components/Home.js"
+import Education from "../components/Education.js";
+import Experience from "../components/Experience.js";
+import Projects from "../components/Projects.js";
+import Contact from "../components/ContactMe.js";
 
 const LandingPage = () => {
   return (

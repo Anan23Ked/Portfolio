@@ -24,7 +24,7 @@ export const ABOUT = [{
 
   </div>
 `,
-skills : ["JavaScript", "React.js", "Vue.js", "Python", "FastAPI", "PyQt", "ML"]}]
+skills : ["Creative Technologist", "Software Developer", "IoT Developer", "Hardware Programmer", "Product Designer"]}]
 
 export const ART_1 = "Acrylic on Paper. Selfishness, Suffering, Curiosity, Three qualities paving way for development guided by the Sun and balanced by the Moon in this vast universe of ours "
 

@@ -1,4 +1,4 @@
-import { CONTACT } from "../data/data";
+import { CONTACT } from "../data/data.js";
 import { motion } from "framer-motion";
 import LocationPin from '../assets/icons/Vector_1_location.png'
 import { AiOutlineMail } from "react-icons/ai";

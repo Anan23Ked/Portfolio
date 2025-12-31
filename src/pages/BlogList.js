@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllPosts } from "../utils/posts";
+import { getAllPosts } from "../utils/posts.js";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
