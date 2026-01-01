@@ -55,4 +55,4 @@ fs.writeFileSync(
   JSON.stringify(posts, null, 2)
 );
 
-console.log("✅ posts.json generated");
+console.log("posts.json generated");

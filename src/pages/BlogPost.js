@@ -17,12 +17,10 @@ export default function BlogPost() {
     <article className="max-w-4xl mx-auto p-8 pb-16 pt-24">
       <h1 className="text-blogHeading font-semibold text-4xl text-left mb-8">{post.title}</h1>
       <p>{new Date(post.date).toDateString()}</p>
-
-      {/* <img src={post.coverImage} alt={post.title} /> */}
-
       <div
+        className="prose"
         dangerouslySetInnerHTML={{
-          __html: marked(post.content),
+          __html: post.content ? marked(post.content) : '',
         }}
       />
     </article>

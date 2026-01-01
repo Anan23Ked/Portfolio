@@ -1,16 +1,16 @@
 [
   {
-    "slug": "hello",
-    "title": "Hello World",
-    "date": "2025-01-01",
-    "excerpt": "This is my first blog post",
-    "coverImage": "/img/image.png"
+    "slug": "PhantomLines",
+    "title": "Phantom Lines",
+    "date": "2025-12-01",
+    "excerpt": "Sensing the unseen. The idea for this  physical-analogue data device prototype was creating a hand that can detect the virtual world",
+    "coverImage": "/img/phantomLineImage.jpeg"
   },
   {
-    "slug": "second",
-    "title": "Second world",
-    "date": "2025-01-01",
-    "excerpt": "This is my second blog post",
-    "coverImage": "/img/image.png"
+    "slug": "PrototypingTheChange",
+    "title": "Prototyping the Change",
+    "date": "2025-10-15",
+    "excerpt": "Is it possible to capture the constant physical changes in our environment that’s backed by metrics and visually appealing enough whilst blurring the lines between technical and creative progress?",
+    "coverImage": "/img/blog1.png"
   }
 ]
