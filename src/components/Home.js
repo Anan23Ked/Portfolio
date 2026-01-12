@@ -1,10 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import display_art_img from '../assets/artworks/Art_1.jpg'
-import { ABOUT, TAG_LINE, ART_1 } from '../data/data.js';
-import pdf from "../assets/resume/Resume_Ananya.pdf"
+import { ABOUT, TAG_LINE } from '../data/data.js';
+// import pdf from "../assets/resume/Resume_Ananya.pdf"
 import { pdfjs } from "react-pdf";
-import { CgFileDocument } from "react-icons/cg";
 
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
@@ -55,7 +54,7 @@ const Home = () => {
                     </div>
                   ))}</div>
 
-                  <div className="mt-5 mb-5">
+                  {/* <div className="mt-5 mb-5">
 
                     <motion.button
                       className="bg-primaryColor  text-secondaryColor px-4 py-2 rounded shadow-md"
@@ -76,7 +75,7 @@ const Home = () => {
                     </motion.button>
 
 
-                  </div>
+                  </div> */}
                 </motion.div></div>
 
               <motion.div
@@ -90,9 +89,9 @@ const Home = () => {
                   alt="home pic"
                   className="max-h-96 float-right"
                 />
-                <div className="text-center text-paragraphText mt-4">
+                {/* <div className="text-center text-paragraphText mt-4">
                   {ART_1}
-                </div>
+                </div> */}
               </motion.div>
             </div>
             {/* <div className='about p-8  rounded-lg bg-gradient-to-r from-secondaryColor via-singleLineText to-primaryColorDark border border-neutral-300 justify-between flex flex-row'>
