@@ -9,11 +9,11 @@ import black_hole_airpod from '../assets/artworks/black-hole_airpod.jpeg';
 import galaxy_1_airpod from '../assets/artworks/galaxy-1_airpod.jpeg';
 import galaxy_2_airpod from '../assets/artworks/galaxy-2_airpod.jpeg';
 import landscape_1 from '../assets/artworks/landscape-1.jpeg';
-import landscape_2 from '../assets/artworks/landscape-2.jpeg';
+// import landscape_2 from '../assets/artworks/landscape-2.jpeg';
 import landscape_3 from '../assets/artworks/landscape-3.jpeg';
 import sky_airpod from '../assets/artworks/sky_airpod.jpeg';
 import waterfall from '../assets/artworks/waterfall.jpeg';
-import { ABOUT, TAG_LINE, ART_1 } from '../data/data.js';
+import { ABOUT, TAG_LINE } from '../data/data.js';
 // import pdf from "../assets/resume/Resume_Ananya.pdf"
 import { pdfjs } from "react-pdf";
 
@@ -21,7 +21,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
 
 const Home = () => {
-  const images = [Apple_acrylic, Art_1, Dolphin_airpod, Ganesha, Wave_seagull_phone_case, black_hole_airpod, galaxy_1_airpod, galaxy_2_airpod, landscape_1, landscape_2, landscape_3, sky_airpod, waterfall];
+  const images = [Apple_acrylic, Art_1, Dolphin_airpod, Ganesha, Wave_seagull_phone_case, black_hole_airpod, galaxy_1_airpod, galaxy_2_airpod, landscape_1, landscape_3, sky_airpod, waterfall];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {

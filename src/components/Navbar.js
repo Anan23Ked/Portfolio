@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { FiGithub } from "react-icons/fi";
-import { GrGallery } from "react-icons/gr";
+// import { GrGallery } from "react-icons/gr";
 import { TfiWrite } from "react-icons/tfi";
 import pdf from "../assets/resume/Resume_Ananya.pdf"
 import { pdfjs } from "react-pdf";
