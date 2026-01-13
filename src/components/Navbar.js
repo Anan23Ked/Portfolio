@@ -42,11 +42,11 @@ const NavBar = () => {
       label: "Blog",
       icon: <TfiWrite className="inline mr-1" />,
     },
-    {
-      to: "/gallery",
-      label: "Gallery",
-      icon: <GrGallery className="inline mr-1" />,
-    },
+    // {
+    //   to: "/gallery",
+    //   label: "Gallery",
+    //   icon: <GrGallery className="inline mr-1" />,
+    // },
   ];
 
   return (

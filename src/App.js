@@ -7,10 +7,12 @@ import AppRoutes from "./routes.js";
 function App() {
   return (
     <Router>
-      <div className="App overflow-hidden">
+      <div className="App min-h-screen flex flex-col">
         <NavBar />
 
-        <AppRoutes />
+        <div className="flex-grow">
+          <AppRoutes />
+        </div>
 
         <Footer />
       </div>
