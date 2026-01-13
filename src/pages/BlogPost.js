@@ -14,10 +14,14 @@ export default function BlogPost() {
   if (!post) return <p>Loading...</p>;
 
   return (
-    <article className="max-w-4xl mx-auto p-8 pb-16 pt-24">
+    <article className="max-w-4xl mx-auto pb-16 pt-24">
       <h1 className="text-blogHeading font-semibold text-4xl text-left mb-8">{post.title}</h1>
       <p>{new Date(post.date).toDateString()}</p>
-      <div
+      <div 
+        style={{
+          maxWidth: '100%',
+          height: 'auto',
+        }}
         className="prose"
         dangerouslySetInnerHTML={{
           __html: post.content ? marked(post.content) : '',

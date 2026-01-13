@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import profile_picture from "../assets/profile_picture.png"
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import {
-  AiFillStar,
-  AiOutlineFundProjectionScreen,
-} from "react-icons/ai";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
+import { FiGithub } from "react-icons/fi";
 import { GrGallery } from "react-icons/gr";
 import { TfiWrite } from "react-icons/tfi";
+import pdf from "../assets/resume/Resume_Ananya.pdf"
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = "Portfolio/public/pdf.worker.min.js";
@@ -58,7 +57,7 @@ const NavBar = () => {
       <div className="container mx-auto flex items-center justify-between p-4">
         <Link to="/#home" className="flex items-center">
           <img src={profile_picture} alt="brand" className="w-10 h-10 mr-2" />
-          <span className="text-secondaryColor text-lg font-semibold">
+          <span className="text-secondaryColor text-2xl">
             Ananya Kedlaya
           </span>
         </Link>
@@ -101,13 +100,25 @@ const NavBar = () => {
 
 
             <li className="mt-4 md:mt-0">
+
               <a
-                href="https://github.com/Anan23Ked/Portfolio"
+                href="https://github.com/Anan23Ked"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center bg-primaryColor text-yellow-700 px-4 py-2 rounded hover:bg-primaryColorDark hover:text-yellow-200 transition-all duration-300"
-              >
-                <CgGitFork className="mr-1" /> <AiFillStar className="ml-1" />
+                className="group relative text-secondaryColor hover:text-secondaryHover transition-all duration-300 inline-block"
+              > <FiGithub className="inline mr-1" />GitHub
+
+              </a>
+            </li>
+
+            <li className="mt-4 md:mt-0">
+
+              <a
+                href={pdf} target="_blank"
+                rel="noopener noreferrer"
+                className="group relative text-secondaryColor hover:text-secondaryHover transition-all duration-300 inline-block"
+              > <CgFileDocument className="inline mr-1" />Resume
+
               </a>
             </li>
           </ul>
