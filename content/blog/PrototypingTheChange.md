@@ -1,6 +1,6 @@
 ---
 title: "Prototyping the Change"
-date: "2025-10-15"
+date: "2025-10-10"
 excerpt: "Is it possible to capture the constant physical changes in our environment that’s backed by metrics and visually appealing enough whilst blurring the lines between technical and creative progress?"
 coverImage: "content/img/blog1.png"
 ---
@@ -19,6 +19,7 @@ When I think about the environment, I associate it with the four classical eleme
 
 ## Elements of IoT
 
+
 Combine an object with a suitable software program and you get a device that can follow orders and generate results. Add a network for remote communication — removing the need to be physically present — and you get a “smart” device that senses, decides, and reports. Algorithms allow devices to make decisions and communicate results across the world, creating dynamic experiences that make life easier.
 
 I wanted a digital representation of the primal physical world that is ever-changing and that evolves over time — a world where actions are binary and representation is RGB. I associated the four elements with basic colours:
@@ -28,7 +29,7 @@ I wanted a digital representation of the primal physical world that is ever-chan
 - Blue — Water
 - A blend — Air
 
-## All about the code
+## All About The Codes
 
 Controlling lights to display underlying mechanisms of change led me to mathematical functions: given input values, the equations update continuously and generate evolving outputs.
 
@@ -40,11 +41,11 @@ I used sine functions in my `Arduino` code to create horizontal and vertical wav
 
 Red, green, and blue (and mixes thereof) were the pyramid’s four faces, mapped to Fire, Earth (trees), Water (waves), and Air. When a face is selected, the display shows a continuous sine wave animation for that element.
 
-## The hurdle
+## The Hurdle
 
 The device needed an accurate physical mapping between the pyramid faces and the rotary encoder states. I marked a physical zero position and set that as the initial state in the `Arduino` code so encoder states and pyramid faces stayed in sync. This approach requires a preset physical mapping, which can be inconvenient if the device is moved or disconnected while the knob does not match the physical initial state. Adding an internal position reader for the pyramid before executing the display would make the device more convenient and precise, improving the human–object relationship.
 
-## It's all in the head
+## It's All in the Head
 
 Representations are only as vivid as our imagination; constrained by physical reality, science fiction often becomes technology. Connected systems have become part of daily life, and it's easy to forget their relevance. Still, such systems can pause us and inspire designs that reflect our environment at a granular level.
 
@@ -52,7 +53,7 @@ While most work focuses on seamless user experiences and clear data representati
 
 At this integration, the culmination of hardware and software acts as a digital nervous system for the planet: sensing, interpreting, and responding to environmental change. From data collection at scale to global visualization, the Internet bridges the gap between data and decision-making, enabling more sustainable and safer living.
 
-## Play curious, yet stay safe
+## Play Curious, yet Stay Safe
 
 As devices grow in capability, managing them becomes a serious responsibility. IoT devices face security risks with severe impacts on users and products. For users, risks include loss of personal data and breaches of privacy. The 2015 remote hack of a Jeep Cherokee by security researchers Charlie Miller and Chris Valasek — where attackers accessed the vehicle’s Uconnect system and disabled it remotely — highlighted these dangers and shook public trust.
 
