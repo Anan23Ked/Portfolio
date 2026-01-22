@@ -1,5 +1,5 @@
 # Link to live website
-[Portfolio website](https://ananyakedlaya.netlify.app/)
+[ananyakedlaya.com](https://ananyakedlaya.com)
 
 # Getting Started with Create React App
 
